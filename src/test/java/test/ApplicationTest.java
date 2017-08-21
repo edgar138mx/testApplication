@@ -18,7 +18,7 @@ public class ApplicationTest {
 //Change the URL based on the location where Tomcat is installed
 driver.get("http://localhost:8081/petclinic/");    
       String title = driver.getTitle();      
-Assert.assertTrue(title.contains("a Spring Frameworkk"));   
+Assert.assertFalse(title.contains("a Spring Frameworkk"));   
     }
 
 	@BeforeTest
